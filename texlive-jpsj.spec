@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/jpsj
+# catalog-date 2007-03-14 08:57:39 +0100
+# catalog-license lppl
+# catalog-version 1.2.2
 Name:		texlive-jpsj
 Version:	1.2.2
 Release:	1
@@ -39,6 +45,7 @@ TeXLive jpsj package.
 %doc %{_texmfdistdir}/doc/latex/jpsj/injpsj2.pdf
 %doc %{_texmfdistdir}/doc/latex/jpsj/injpsj2.tex
 %doc %{_texmfdistdir}/doc/latex/jpsj/template.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -49,3 +56,5 @@ TeXLive jpsj package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
