@@ -6,7 +6,7 @@
 # catalog-version 1.2.2
 Name:		texlive-jpsj
 Version:	1.2.2
-Release:	7
+Release:	8
 Summary:	Document Class for Journal of the Physical Society of Japan
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jpsj
