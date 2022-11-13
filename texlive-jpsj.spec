@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/jpsj
-# catalog-date 2007-03-14 08:57:39 +0100
-# catalog-license lppl
-# catalog-version 1.2.2
 Name:		texlive-jpsj
-Version:	1.2.2
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Document Class for Journal of the Physical Society of Japan
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jpsj
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jpsj.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jpsj.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jpsj.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jpsj.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,12 +16,12 @@ Requires(post):	texlive-kpathsea
 TeXLive jpsj package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,24 +33,10 @@ TeXLive jpsj package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2.2-2
-+ Revision: 752932
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2.2-1
-+ Revision: 718756
-- texlive-jpsj
-- texlive-jpsj
-- texlive-jpsj
-- texlive-jpsj
-
