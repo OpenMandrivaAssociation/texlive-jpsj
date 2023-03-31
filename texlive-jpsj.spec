@@ -1,6 +1,6 @@
 Name:		texlive-jpsj
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Document Class for Journal of the Physical Society of Japan
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jpsj
