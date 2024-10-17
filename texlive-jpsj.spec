@@ -3,7 +3,7 @@ Version:	66115
 Release:	1
 Summary:	Document Class for Journal of the Physical Society of Japan
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/jpsj
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/jpsj
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jpsj.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jpsj.doc.r%{version}.tar.xz
